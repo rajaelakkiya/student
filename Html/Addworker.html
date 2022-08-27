@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="../Css/AddWorkers.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <br><a class="fa-light fa-graduation-cap" style="font-size:50px;color:white"></i></br>
+                <a class="navbar-brand text-white" aria-current="page" href="#">Schools</a>>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item  ">
+                            <a class="nav-link active d-flex text-white" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link   dropdown-toggle text-white" href="Student.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Students
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-black" href="Student.html">Students</a></li>
+                                <li><a class="dropdown-item text-black" href="AddStudent.html">Create a Students</a></li>
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle text-white" href="teachers.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Teachers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-black" href="teachers.html">Teachers</a></li>
+                            <li><a class="dropdown-item text-black" href="../AddTeacher.html.html">Create teachers</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Workers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-black" href="workers.html">Workers</a></li>
+                            <li><a class="dropdown-item text-black" href="Addworker.html">Create Workers</a></li>
+                        </ul>
+
+                    <li><a class="dropdown-item text-white" href="signin.html">Logout</a></li>
+                    </ul>
+
+                </div>
+        </div>
+    </nav>
+
+    <section>
+    <div class="container mt-2">
+    <span class="fw-bold ms-2 ps-10 fs-15"><h3>Create Workers</span>
+  <button type="button"class="btn btn-primary float-end mt-0 button me-7">
+    <a class="text-white nav-link" href="workers.html">Back </a></button>
+</div>
+<input type="hidden" id="newid" value="">
+    <div class="row mt-5 mb-2">
+        <div class=" col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" id="fname" class="form-control form-control-lg mb-3" placeholder="First Name" />
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="lname" class="form-control form-control-lg mb-3" placeholder="Last Name" />
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="mobile" class="form-control form-control-lg mb-3" placeholder="Mobile" />
+                </div>
+              
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" id="email" class="form-control form-control-lg mb-3" placeholder="E-mail" />
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="age" class="form-control form-control-lg mb-3" placeholder="Age" />
+                </div>
+                <div class="col-md-4">
+                    <label>Joing Date</label>
+                    <input type="text" id="Jdb" class="form-control "/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <textarea class="form-control" id="Address" placeholder="Address"  rows="3"></textarea>
+                </div>
+                <div class="col-md-4"> 
+                    <label>Gender</label> :
+                    <input type="radio" name="Gender" value="male" size="10">Male
+                    <input type="radio" name="Gender" value="Female" size="10">Female
+                     <span id="gender" ></span>
+                    </div>
+                   
+                <div class="col-md-4"> 
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob" class="form-control"/>
+                </div>
+ </div>
+            
+            <div class="row">
+                <div class="col-md-4"><br>
+                    <input type="text" id="City" class="form-control form-control-lg mb-3" placeholder="City" />
+                </div>
+                <div class="col-md-4 "><br>
+                    <input type="text" id="State" class="form-control form-control-lg mb-3" placeholder="State" />
+                </div>
+                <div class="col-md-4"><br>
+                    <input type="text" id="country" class="form-control form-control-lg mb-3" placeholder="Country" />
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-4">
+                <select class="form-control" id="Selectposition" aria-label="Default select example">
+                    <option value="">Select your job  Position</option>
+                    <option value="1">HeadMaster</option>
+                    <option value="2">Teachers</option>
+                    <option value="3">Drivers</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-control" id="Selectblood" aria-label="Default select example">
+                    <option value="">Select your bloodgroup</option>
+                    <option value="o">O<sup>+</sup></option>
+                    <option value="A">A<sup>-</sup></option>
+                    <option value="AB">AB<sup>+</sup></option>
+                </select>
+            </div>
+           
+        </div>
+        <button type="button" class="btn btn-success float-end mb-3 me-7 button ms-5"><a
+            class="text-white nav-link" id="Submit">Submit</a></button>
+            <button type="button" class="btn btn-danger float-end mb-3 button ms-5"><a
+             class="text-white nav-link" >Cancel</a></button>
+            </div>
+            <div class=" mb-0 px-xl-5 py-4 px-xl-15 bg-dark">
+                <div class="text-white text-center mb-md-3 ">
+                    Copyright © 2022. All rights reserved.
+                </div>
+            </div>
+        
+        <script src="../javascript/AddWorker.js"></script>
+        </body>
+        </html>

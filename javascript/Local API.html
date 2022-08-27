@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>
+    Create Student
+  </title>
+
+<body>
+  <input id="firstname" type="text" placeholder="enter your first name" />
+  <input id="fathername" type="text" placeholder="enter your fathername" />
+  <input id="address" type="text" placeholder="enter your address" />
+  <input id="dob" type="text" placeholder="enter your dob" />
+  <button type="button" onclick="createStudenttoapi()">create Student</button>
+
+  <table style="border: 1px solid ">
+    <thead>
+      <tr>
+        <th>
+          firstname
+        </th>
+        <th>
+          fathername
+        </th>
+        <th>
+          address
+        </th>
+        <th>
+          dob
+        </th>
+        <th>
+          action
+        </th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="api.js"></script>
+</body>
+</head>
+
+</html>
+
+
+

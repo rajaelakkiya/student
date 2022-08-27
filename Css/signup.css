@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+} 
+.signbutton{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+img{
+    height: 505px;
+    width: 100%;
+}
+roboto{
+font-family: 
+'Roboto';
+font-size: 22px;}
+
+.error{
+    color: red;
+}
+@media only screen and (max-width: 430px) {
+    body {
+      background-color: lightblue;
+    }
+    img{
+        height: 505px;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    img{
+        height: 800px;
+        width: 100%;
+    }
+    body {
+      background-color: rgb(236, 83, 12);
+    }
+  }
+
+  @media only screen and (max-width: 1500px) {
+    img{
+        height: 1000px;
+        width: 100%;
+    }
+    body {
+      background-color: rgb(12, 187, 245);
+    }
+  }
